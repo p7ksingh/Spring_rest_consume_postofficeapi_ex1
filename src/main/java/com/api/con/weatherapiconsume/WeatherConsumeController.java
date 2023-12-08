@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class WeatherConsumeController {
 
     @Autowired
-    WeatherService weatherService;
+    PostOfficeService postOfficeService;
 
     @GetMapping("/")
-    public String getWeatherReport() {
+    public String getPostOfficeReport() {
 
-        return weatherService.getWeatherReport();
+        return postOfficeService.getPostOffice();
     }
 }
